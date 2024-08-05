@@ -1,0 +1,7 @@
+## proto 파일 경로의 파일만 관리
+src/*
+!src/protos
+
+## target에서 jar만 관리
+target/**
+!target/**/*.jar

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package example.proto;
+
+service ExampleProtoService {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+// HelloRequest는 클라이언트에서 서버로 보내는 요청 메시지입니다.
+message HelloRequest {
+  string name = 1;
+}
+
+// HelloResponse는 서버에서 클라이언트로 보내는 응답 메시지입니다.
+message HelloResponse {
+  string message = 1;
+}
